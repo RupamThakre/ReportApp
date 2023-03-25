@@ -11,9 +11,12 @@ import { ReportComponent } from './report/report.component';
 import { NotificationComponent } from './notification/notification.component';
 import { LeadComponent } from './lead/lead.component';
 import { MemberComponent } from './member/member.component';
+import { AppComponent } from './app.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
+  { path: '', redirectTo: '/app', pathMatch: 'full' },
+  { path: 'app', component: AppComponent},
   { path: 'welcome', component: WelcomepageComponent },
   { path: 'login', component : LoginComponent },
   { path: 'register', component : RegisterComponent },

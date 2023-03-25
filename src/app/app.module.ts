@@ -13,6 +13,9 @@ import { ReportComponent } from './report/report.component';
 import { NotificationComponent } from './notification/notification.component';
 import { LeadComponent } from './lead/lead.component';
 import { MemberComponent } from './member/member.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { MemberComponent } from './member/member.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgbModule,
+    AppRoutingModule,
+    MatSlideToggleModule,
+    BrowserAnimationsModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
